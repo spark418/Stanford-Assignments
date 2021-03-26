@@ -78,7 +78,7 @@ public class FlightPlanner extends ConsoleProgram {
 		if (arrow == -1) {
 		throw new ErrorException("Illegal flight entry " + line);
 		}
-		// Note: trim() removes leading/ending spaces from a string
+
 		String fromCity = line.substring(0, arrow).trim();
 		String toCity = line.substring(arrow + 2).trim();
 		defineCity(fromCity);
